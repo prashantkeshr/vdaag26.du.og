@@ -144,7 +144,7 @@ export const resourcesEnggCsData: Resource[] = [
     ...base, id: 'veda-rc-os-02', slug: 'cs-os-processes-nptel',
     title: 'Operating Systems – NPTEL IIT Bombay',
     description: 'Full operating systems course covering process management, synchronisation, memory, file systems, and I/O subsystems. Aligns directly with GATE CS OS syllabus by IIT Bombay faculty.',
-    type: 'video', url: 'https://nptel.ac.in/courses/106101183',
+    type: 'video', url: 'https://nptel.ac.in/courses/106106144',
     subjectIds: ['veda-subject-cs-os'], topicIds: ['veda-topic-cs-os-processes', 'veda-topic-cs-os-scheduling', 'veda-topic-cs-os-memory', 'veda-topic-cs-os-file-systems'],
     examIds: ['veda-exam-gate-cs'],
     difficulty: 'intermediate', source: 'IIT Bombay', provider: 'NPTEL',

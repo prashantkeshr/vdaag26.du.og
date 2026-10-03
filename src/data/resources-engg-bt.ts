@@ -13,14 +13,14 @@ export const resourcesEnggBtData: Resource[] = [
   // ── Biochemistry – Metabolism ──────────────────────────────────────────────────
   {
     ...base, id: 'veda-rbt-bc-01', slug: 'bt-biochemistry-nptel',
-    title: 'Biochemistry – NPTEL IIT Kharagpur',
+    title: 'Biochemistry – NPTEL IIT Madras',
     description: 'Biomolecules (carbohydrates, lipids, proteins, nucleic acids), enzyme kinetics (Michaelis-Menten), metabolic pathways (glycolysis, TCA, oxidative phosphorylation), and biosignalling.',
-    type: 'video', url: 'https://nptel.ac.in/courses/102105035',
+    type: 'video', url: 'https://nptel.ac.in/courses/102106087',
     subjectIds: ['veda-subject-bt-biochemistry'], topicIds: ['veda-topic-bt-bc-metabolism', 'veda-topic-bt-bc-enzymes', 'veda-topic-bt-bc-biomolecules'],
     examIds: ['veda-exam-gate-bt'],
-    difficulty: 'intermediate', source: 'IIT Kharagpur', provider: 'NPTEL',
+    difficulty: 'intermediate', source: 'IIT Madras', provider: 'NPTEL',
     tags: ['biochemistry', 'glycolysis', 'tca-cycle', 'enzyme-kinetics', 'NPTEL'],
-    seoTitle: 'Biochemistry – NPTEL IIT Kharagpur', seoDescription: 'Full NPTEL biochemistry course for GATE BT: metabolic pathways and enzyme kinetics.',
+    seoTitle: 'Biochemistry – NPTEL IIT Madras', seoDescription: 'Full NPTEL biochemistry course for GATE BT: metabolic pathways and enzyme kinetics.',
   },
   {
     ...base, id: 'veda-rbt-bc-02', slug: 'bt-metabolism-khan',
@@ -63,14 +63,14 @@ export const resourcesEnggBtData: Resource[] = [
   // ── Genetics – DNA & Recombination ─────────────────────────────────────────────
   {
     ...base, id: 'veda-rbt-gen-01', slug: 'bt-genetics-nptel',
-    title: 'Molecular Biology & Genetics – NPTEL IIT Madras',
+    title: 'Molecular Biology – NPTEL IIT Guwahati',
     description: 'DNA replication, transcription, translation, gene regulation (lac operon, trp operon), mutation and repair, recombinant DNA technology (restriction enzymes, cloning vectors, PCR, Southern blot).',
-    type: 'video', url: 'https://nptel.ac.in/courses/102106062',
+    type: 'video', url: 'https://nptel.ac.in/courses/102103341',
     subjectIds: ['veda-subject-bt-genetics'], topicIds: ['veda-topic-bt-gen-dna', 'veda-topic-bt-gen-expression', 'veda-topic-bt-gen-recombinant'],
     examIds: ['veda-exam-gate-bt'],
-    difficulty: 'intermediate', source: 'IIT Madras', provider: 'NPTEL',
+    difficulty: 'intermediate', source: 'IIT Guwahati', provider: 'NPTEL',
     tags: ['genetics', 'dna-replication', 'recombinant-dna', 'pcr', 'NPTEL'],
-    seoTitle: 'Molecular Biology & Genetics – NPTEL IIT Madras', seoDescription: 'NPTEL molecular biology for GATE BT: replication, transcription, and recombinant DNA.',
+    seoTitle: 'Molecular Biology – NPTEL IIT Guwahati', seoDescription: 'NPTEL molecular biology for GATE BT: replication, transcription, and recombinant DNA.',
   },
   {
     ...base, id: 'veda-rbt-gen-02', slug: 'bt-dna-replication-khan',
@@ -113,14 +113,14 @@ export const resourcesEnggBtData: Resource[] = [
   // ── Bioprocess – Fermentation ────────────────────────────────────────────────────
   {
     ...base, id: 'veda-rbt-bp-01', slug: 'bt-bioprocess-nptel',
-    title: 'Bioprocess Engineering – NPTEL IIT Kharagpur',
+    title: 'Fundamentals of Bioprocess Engineering – NPTEL IIT Guwahati',
     description: 'Microbial growth kinetics (Monod equation), batch/fed-batch/continuous fermentation, bioreactor design (CSTR, PFR), dissolved oxygen, sterilisation (thermal death kinetics), and downstream processing.',
-    type: 'video', url: 'https://nptel.ac.in/courses/102105044',
+    type: 'video', url: 'https://nptel.ac.in/courses/102103672',
     subjectIds: ['veda-subject-bt-bioprocess'], topicIds: ['veda-topic-bt-bp-fermentation', 'veda-topic-bt-bp-bioreactors', 'veda-topic-bt-bp-downstream'],
     examIds: ['veda-exam-gate-bt'],
-    difficulty: 'intermediate', source: 'IIT Kharagpur', provider: 'NPTEL',
+    difficulty: 'intermediate', source: 'IIT Guwahati', provider: 'NPTEL',
     tags: ['bioprocess', 'fermentation', 'bioreactor', 'monod', 'downstream', 'NPTEL'],
-    seoTitle: 'Bioprocess Engineering – NPTEL IIT Kharagpur', seoDescription: 'NPTEL bioprocess course for GATE BT: fermentation kinetics, bioreactors, and DSP.',
+    seoTitle: 'Bioprocess Engineering – NPTEL IIT Guwahati', seoDescription: 'NPTEL bioprocess course for GATE BT: fermentation kinetics, bioreactors, and DSP.',
   },
   {
     ...base, id: 'veda-rbt-bp-02', slug: 'bt-fermentation-gfg',
