@@ -1,5 +1,5 @@
 here is the link of its live version-
-(https://prashantkeshr.github.io/Veda/)
+(https://prashantkeshr.github.io/vdaag26.du.og/)
 
 # React + TypeScript + Vite
 

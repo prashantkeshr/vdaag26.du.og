@@ -1,5 +1,5 @@
-{
-  "$schema": "/Veda/api/v1/schema.json",
+﻿{
+  "$schema": "/vdaag26.du.og/api/v1/schema.json",
   "version": "1.0.0",
   "entity": "course",
   "count": 4,

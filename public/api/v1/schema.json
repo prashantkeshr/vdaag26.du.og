@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prashantkeshr.github.io/Veda/api/v1/schema.json",
+  "$id": "https://prashantkeshr.github.io/vdaag26.du.og/api/v1/schema.json",
   "title": "VEDA Knowledge Schema",
   "description": "JSON Schema for all entity types in the VEDA knowledge platform by Dhurta.Org.",
   "version": "1.0.0",

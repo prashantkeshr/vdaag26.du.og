@@ -13,7 +13,7 @@ const srcDir = join(root, 'src', 'data');
 const outDir = join(root, 'public', 'api', 'v1');
 
 const VERSION = '1.0.0';
-const SCHEMA_URL = '/Veda/api/v1/schema.json';
+const SCHEMA_URL = '/vdaag26.du.og/api/v1/schema.json';
 
 const ENTITIES = [
   { file: 'subjects.json',       entity: 'subject' },
@@ -40,7 +40,7 @@ for (const { file, entity } of ENTITIES) {
     data: raw,
   };
   writeFileSync(join(outDir, file), JSON.stringify(envelope, null, 2));
-  index.endpoints.push({ entity, file, count: raw.length, path: `/Veda/api/v1/${file}` });
+  index.endpoints.push({ entity, file, count: raw.length, path: `/vdaag26.du.og/api/v1/${file}` });
   console.log(`✓ ${file} (${raw.length} items)`);
 }
 
