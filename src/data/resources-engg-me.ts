@@ -1,0 +1,322 @@
+import type { Resource } from '../models';
+
+const base = {
+  language: 'English',
+  verificationStatus: 'verified' as const,
+  contentStatus: 'published' as const,
+  source: 'NPTEL',
+  academicLevel: 'undergraduate' as const,
+  createdAt: '2026-11-04',
+  updatedAt: '2026-11-04',
+};
+
+export const resourcesEnggMeData: Resource[] = [
+
+  // ── Theory of Machines & Vibrations ─────────────────────────────────────────
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-tom-kin-iitk',
+    slug: 'me-nptel-kinematics-mechanisms-iitk',
+    title: 'Kinematics of Machines – IIT Kanpur',
+    description: 'NPTEL course covering kinematics of mechanisms, velocity and acceleration analysis, gear trains, and cams. Core theory of machines course for GATE ME preparation.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112104121',
+    subjectIds: ['veda-subject-me-tom'],
+    topicIds: ['veda-topic-me-mechanisms-links', 'veda-topic-me-kinematics-vel-accel', 'veda-topic-me-gear-trains', 'veda-topic-me-cams-followers'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'kinematics', 'mechanisms', 'gear-trains', 'cams', 'IIT-Kanpur', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-tom-dyn-iitk',
+    slug: 'me-nptel-dynamics-machines-iitk',
+    title: 'Dynamics of Machines – IIT Kanpur',
+    description: 'NPTEL course on dynamics of machines including flywheels, governors, balancing, and gyroscopes. Pairs with the kinematics course for complete TOM coverage.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112104114',
+    subjectIds: ['veda-subject-me-tom'],
+    topicIds: ['veda-topic-me-flywheels-governors', 'veda-topic-me-dynamic-balancing'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'dynamics', 'flywheels', 'governors', 'balancing', 'IIT-Kanpur', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-tom-noc-kin-iitkgp',
+    slug: 'me-nptel-noc-kinematics-iitkgp',
+    title: 'NOC: Kinematics of Mechanisms – IIT Kharagpur',
+    description: 'NPTEL NOC course providing an alternative treatment of mechanism kinematics with more graphical analysis. Good supplementary resource.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112105268',
+    subjectIds: ['veda-subject-me-tom'],
+    topicIds: ['veda-topic-me-mechanisms-links', 'veda-topic-me-kinematics-vel-accel'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'NOC', 'kinematics', 'mechanisms', 'IIT-Kharagpur'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-vib-noc-iitr',
+    slug: 'me-nptel-noc-intro-vibrations-iitr',
+    title: 'NOC: Introduction to Vibrations – IIT Roorkee',
+    description: 'NPTEL NOC course on mechanical vibrations: free and forced vibrations of SDOF and MDOF systems, vibration isolation and transmissibility. Directly maps to GATE vibrations syllabus.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112107212',
+    subjectIds: ['veda-subject-me-tom'],
+    topicIds: ['veda-topic-me-free-vibrations', 'veda-topic-me-forced-vibrations'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'NOC', 'vibrations', 'SDOF', 'transmissibility', 'IIT-Roorkee', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-vib-iitg',
+    slug: 'me-nptel-mechanical-vibrations-iitg',
+    title: 'Mechanical Vibrations – IIT Guwahati',
+    description: 'NPTEL course on mechanical vibrations with strong analytical treatment. Covers natural frequencies, resonance, and vibration control.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112103111',
+    subjectIds: ['veda-subject-me-tom'],
+    topicIds: ['veda-topic-me-free-vibrations', 'veda-topic-me-forced-vibrations'],
+    difficulty: 'advanced',
+    tags: ['NPTEL', 'vibrations', 'natural-frequency', 'resonance', 'IIT-Guwahati'],
+  },
+
+  // ── Machine Design ───────────────────────────────────────────────────────────
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-md-design-elem-iitkgp',
+    slug: 'me-nptel-design-machine-elements-iitkgp',
+    title: 'Design of Machine Elements I – IIT Kharagpur',
+    description: 'NPTEL course covering failure theories, fatigue design, shafts, keys, bearings, and gears. The primary machine design course for GATE ME.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112105124',
+    subjectIds: ['veda-subject-me-design'],
+    topicIds: ['veda-topic-me-failure-theories', 'veda-topic-me-fatigue-design', 'veda-topic-me-shafts-keys', 'veda-topic-me-bearings'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'machine-design', 'failure-theories', 'fatigue', 'bearings', 'IIT-Kharagpur', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-md-design-ii-iitm',
+    slug: 'me-nptel-machine-design-ii-iitm',
+    title: 'Machine Design II – IIT Madras',
+    description: 'NPTEL course covering gear design, springs, pressure vessels, bolted and welded joints. Complements Design of Machine Elements I for complete GATE coverage.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112106137',
+    subjectIds: ['veda-subject-me-design'],
+    topicIds: ['veda-topic-me-gear-design', 'veda-topic-me-springs-vessels', 'veda-topic-me-bolted-welded'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'machine-design', 'gear-design', 'springs', 'pressure-vessels', 'IIT-Madras', 'GATE-ME'],
+  },
+
+  // ── Manufacturing Engineering ─────────────────────────────────────────────────
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-mfg-materials-proc-iitg',
+    slug: 'me-nptel-materials-processing-iitg',
+    title: 'Materials Processing – IIT Guwahati',
+    description: 'NPTEL course on casting, forming, and welding processes. Covers Chvorinov\'s rule, riser design, metal forming fundamentals, and arc welding.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112103528',
+    subjectIds: ['veda-subject-me-manufacturing'],
+    topicIds: ['veda-topic-me-casting', 'veda-topic-me-metal-forming', 'veda-topic-me-welding'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'casting', 'metal-forming', 'welding', 'IIT-Guwahati', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-mfg-machining-iitk',
+    slug: 'me-nptel-machining-science-iitk',
+    title: 'Machining Science – IIT Kanpur',
+    description: 'NPTEL course on metal cutting: Merchant\'s circle, orthogonal cutting, Taylor\'s tool life, turning, drilling, and milling. Essential for GATE manufacturing questions.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112104290',
+    subjectIds: ['veda-subject-me-manufacturing'],
+    topicIds: ['veda-topic-me-machining-turning', 'veda-topic-me-machining-milling'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'machining', 'Merchant-circle', 'Taylor-tool-life', 'turning', 'IIT-Kanpur', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-mfg-metrology-iitk',
+    slug: 'me-nptel-engineering-metrology-iitk',
+    title: 'Engineering Metrology – IIT Kanpur',
+    description: 'NPTEL course on measurement, limits, fits, tolerances, gauging, and statistical quality control. Covers SPC, control charts, Cp and Cpk.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112104250',
+    subjectIds: ['veda-subject-me-manufacturing'],
+    topicIds: ['veda-topic-me-metrology-qc'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'metrology', 'limits-fits', 'tolerances', 'SPC', 'Cpk', 'IIT-Kanpur', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-mfg-fund-iitr',
+    slug: 'me-nptel-fundamentals-manufacturing-iitr',
+    title: 'Fundamentals of Manufacturing – IIT Roorkee',
+    description: 'NPTEL comprehensive manufacturing course covering casting, forming, machining, and joining processes. Good for revision and overview.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112107219',
+    subjectIds: ['veda-subject-me-manufacturing'],
+    topicIds: ['veda-topic-me-casting', 'veda-topic-me-metal-forming', 'veda-topic-me-welding', 'veda-topic-me-machining-turning'],
+    difficulty: 'beginner',
+    tags: ['NPTEL', 'manufacturing', 'overview', 'IIT-Roorkee'],
+  },
+
+  // ── Industrial Engineering & OR ───────────────────────────────────────────────
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-ie-ior-iitg',
+    slug: 'me-nptel-ie-operations-research-iitg',
+    title: 'Industrial Engineering & Operations Research – IIT Guwahati',
+    description: 'NPTEL course covering LPP, transportation, assignment, CPM/PERT, inventory models, queuing, and scheduling. The most comprehensive GATE ME IE/OR resource.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112103774',
+    subjectIds: ['veda-subject-me-ie'],
+    topicIds: ['veda-topic-me-linear-programming', 'veda-topic-me-network-analysis', 'veda-topic-me-inventory-models', 'veda-topic-me-forecasting', 'veda-topic-me-queuing-theory', 'veda-topic-me-scheduling'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'industrial-engineering', 'OR', 'LPP', 'CPM', 'EOQ', 'IIT-Guwahati', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-ie-principles-iitr',
+    slug: 'me-nptel-principles-industrial-engineering-iitr',
+    title: 'Principles of Industrial Engineering – IIT Roorkee',
+    description: 'NPTEL course on work study, time study, standard time, line balancing, and production planning fundamentals. Strong on the softer IE concepts.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112107292',
+    subjectIds: ['veda-subject-me-ie'],
+    topicIds: ['veda-topic-me-work-study', 'veda-topic-me-scheduling'],
+    difficulty: 'beginner',
+    tags: ['NPTEL', 'work-study', 'time-study', 'standard-time', 'line-balancing', 'IIT-Roorkee'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-ie-or-iitm',
+    slug: 'me-nptel-fundamentals-or-iitm',
+    title: 'Fundamentals of Operations Research – IIT Madras',
+    description: 'NPTEL course providing strong mathematical treatment of OR methods: LP, integer programming, network models, queuing. Good for GATE analytical problems.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112106134',
+    subjectIds: ['veda-subject-me-ie'],
+    topicIds: ['veda-topic-me-linear-programming', 'veda-topic-me-queuing-theory', 'veda-topic-me-inventory-models'],
+    difficulty: 'advanced',
+    tags: ['NPTEL', 'operations-research', 'LP', 'queuing', 'IIT-Madras', 'GATE-ME'],
+  },
+
+  // ── Heat Transfer ────────────────────────────────────────────────────────────
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-ht-noc-iitb',
+    slug: 'me-nptel-noc-heat-transfer-iitb',
+    title: 'NOC: Heat Transfer – IIT Bombay',
+    description: 'NPTEL NOC course covering conduction, convection, radiation, and heat exchangers. Highly recommended for GATE ME heat transfer preparation with solved examples.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112101003',
+    subjectIds: ['veda-subject-me-heat-transfer'],
+    topicIds: ['veda-topic-me-ht-conduction', 'veda-topic-me-ht-convection', 'veda-topic-me-ht-radiation', 'veda-topic-me-ht-heat-exchangers'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'NOC', 'heat-transfer', 'conduction', 'convection', 'radiation', 'IIT-Bombay', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-ht-fund-iitkgp',
+    slug: 'me-nptel-fundamentals-heat-transfer-iitkgp',
+    title: 'Fundamentals of Heat Transfer – IIT Kharagpur',
+    description: 'NPTEL course on heat transfer fundamentals with emphasis on engineering applications. Covers fins, transient conduction, Nu correlations, and ε-NTU method in detail.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112105771',
+    subjectIds: ['veda-subject-me-heat-transfer'],
+    topicIds: ['veda-topic-me-ht-conduction', 'veda-topic-me-ht-convection', 'veda-topic-me-ht-heat-exchangers'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'heat-transfer', 'fins', 'NTU-method', 'Nu-correlations', 'IIT-Kharagpur', 'GATE-ME'],
+  },
+
+  // ── Refrigeration & AC ───────────────────────────────────────────────────────
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-rac-iitkgp',
+    slug: 'me-nptel-refrigeration-air-conditioning-iitkgp',
+    title: 'Refrigeration & Air Conditioning – IIT Kharagpur',
+    description: 'NPTEL comprehensive course on VCRC, absorption refrigeration, refrigerants, and psychrometric analysis. The definitive NPTEL RAC resource for GATE ME.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112105128',
+    subjectIds: ['veda-subject-me-rac'],
+    topicIds: ['veda-topic-me-rac-vc-cycle', 'veda-topic-me-rac-absorption', 'veda-topic-me-rac-refrigerants', 'veda-topic-me-psychrometry'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'RAC', 'VCRC', 'absorption', 'psychrometry', 'IIT-Kharagpur', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-rac-noc-iitr',
+    slug: 'me-nptel-noc-rac-iitr',
+    title: 'NOC: Refrigeration & Air Conditioning – IIT Roorkee',
+    description: 'NPTEL NOC course on RAC systems with emphasis on practical applications and psychrometric chart analysis.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112107208',
+    subjectIds: ['veda-subject-me-rac'],
+    topicIds: ['veda-topic-me-rac-vc-cycle', 'veda-topic-me-psychrometry'],
+    difficulty: 'beginner',
+    tags: ['NPTEL', 'NOC', 'RAC', 'psychrometry', 'IIT-Roorkee'],
+  },
+
+  // ── Engineering Mechanics ────────────────────────────────────────────────────
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-em-noc-iitm',
+    slug: 'me-nptel-noc-engineering-mechanics-iitm',
+    title: 'NOC: Engineering Mechanics – IIT Madras',
+    description: 'NPTEL NOC course on engineering mechanics covering statics, kinematics, and dynamics of particles and rigid bodies. Strong on free body diagrams and Newton\'s laws.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112106286',
+    subjectIds: ['veda-subject-me-engg-mech'],
+    topicIds: ['veda-topic-me-statics-equilibrium', 'veda-topic-me-centroids-moi', 'veda-topic-me-friction', 'veda-topic-me-kinematics-particles', 'veda-topic-me-kinetics-rigid-body'],
+    difficulty: 'beginner',
+    tags: ['NPTEL', 'NOC', 'engineering-mechanics', 'statics', 'dynamics', 'IIT-Madras', 'GATE-ME'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-em-sad-iitm',
+    slug: 'me-nptel-engineering-mechanics-statics-dynamics-iitm',
+    title: 'Engineering Mechanics: Statics and Dynamics – IIT Madras',
+    description: 'NPTEL course providing an in-depth treatment of statics (equilibrium, friction, centroid) and dynamics (kinematics, kinetics of particles and rigid bodies) with worked examples.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112106180',
+    subjectIds: ['veda-subject-me-engg-mech'],
+    topicIds: ['veda-topic-me-statics-equilibrium', 'veda-topic-me-centroids-moi', 'veda-topic-me-friction', 'veda-topic-me-kinematics-particles', 'veda-topic-me-kinetics-rigid-body'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'engineering-mechanics', 'statics', 'dynamics', 'friction', 'IIT-Madras'],
+  },
+
+  {
+    ...base,
+    id: 'veda-resource-me-nptel-em-iitg',
+    slug: 'me-nptel-engineering-mechanics-iitg',
+    title: 'Engineering Mechanics – IIT Guwahati',
+    description: 'NPTEL course on engineering mechanics with concise analytical treatment. Useful as a quick reference alongside primary course materials.',
+    type: 'video',
+    url: 'https://nptel.ac.in/courses/112103108',
+    subjectIds: ['veda-subject-me-engg-mech'],
+    topicIds: ['veda-topic-me-statics-equilibrium', 'veda-topic-me-kinematics-particles', 'veda-topic-me-kinetics-rigid-body'],
+    difficulty: 'intermediate',
+    tags: ['NPTEL', 'engineering-mechanics', 'IIT-Guwahati'],
+  },
+];

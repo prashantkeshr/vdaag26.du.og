@@ -59,6 +59,9 @@ import { resourcesEnggEceData } from '../data/resources-engg-ece';
 import { resourcesEnggChemData } from '../data/resources-engg-chem';
 import { resourcesEnggAeData } from '../data/resources-engg-ae';
 import { resourcesEnggBtData } from '../data/resources-engg-bt';
+import { meSubjectsData } from '../data/engg-me-subjects';
+import { meTopicsData } from '../data/engg-me-topics';
+import { resourcesEnggMeData } from '../data/resources-engg-me';
 
 // ── Generic local repository ───────────────────────────────────────────
 
@@ -266,6 +269,7 @@ export const subjectRepo = new SubjectRepository([
   ...bcomSubjectsData,
   ...baEconomicsSubjectsData,
   ...cbse9to10SubjectsData,
+  ...meSubjectsData,
 ]);
 export const topicRepo = new TopicRepository([
   ...(topicsData as Topic[]),
@@ -283,6 +287,7 @@ export const topicRepo = new TopicRepository([
   ...bcomTopicsData,
   ...baEconomicsTopicsData,
   ...cbse9to10TopicsData,
+  ...meTopicsData,
 ]);
 export const resourceRepo = new ResourceRepository([
   ...(resourcesData as Resource[]),
@@ -304,6 +309,7 @@ export const resourceRepo = new ResourceRepository([
   ...resourcesEnggChemData,
   ...resourcesEnggAeData,
   ...resourcesEnggBtData,
+  ...resourcesEnggMeData,
 ]);
 export const courseRepo = new CourseRepository(coursesData as Course[]);
 export const examRepo = new ExamRepository(examsData as Exam[]);
