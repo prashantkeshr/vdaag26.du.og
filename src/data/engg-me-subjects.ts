@@ -214,7 +214,7 @@ Job scheduling: SPT, LPT, EDD rules for single machine. Johnson's algorithm for 
     slug: 'me-heat-transfer',
     title: 'Heat Transfer',
     shortTitle: 'HT',
-    description: 'Conduction (Fourier's law, fins, transient), convection (Newton's law, internal/external flow), radiation (Stefan-Boltzmann, view factors), and heat exchangers (LMTD, NTU-ε).',
+    description: "Conduction (Fourier's law, fins, transient), convection (Newton's law, internal/external flow), radiation (Stefan-Boltzmann, view factors), and heat exchangers (LMTD, NTU-ε).",
     guide: `## Overview
 Heat Transfer covers three fundamental modes — conduction, convection, and radiation — and their engineering applications in heat exchangers. GATE ME allocates 6–8 marks here, often in combination with Thermodynamics.
 
