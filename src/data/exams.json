@@ -177,14 +177,14 @@
     "description": "Union Public Service Commission Engineering Services Examination for Mechanical Engineering — one of the most prestigious government engineering exams in India. Leads to Class-1 gazetted officer posts in Central Government departments.",
     "type": "competitive",
     "conductingBody": "Union Public Service Commission (UPSC)",
-    "subjectIds": ["veda-subject-engg-maths", "veda-subject-engg-thermo", "veda-subject-fluid-mech", "veda-subject-som"],
-    "topicIds": [],
+    "subjectIds": ["veda-subject-engg-maths", "veda-subject-engg-thermo", "veda-subject-fluid-mech", "veda-subject-som", "veda-subject-me-tom", "veda-subject-me-design", "veda-subject-me-manufacturing", "veda-subject-me-ie", "veda-subject-me-heat-transfer", "veda-subject-me-rac", "veda-subject-me-engg-mech"],
+    "topicIds": ["veda-topic-stress-strain", "veda-topic-bending-shear", "veda-topic-second-law-entropy", "veda-topic-thermo-cycles", "veda-topic-pipe-flow", "veda-topic-me-mechanisms-links", "veda-topic-me-kinematics-vel-accel", "veda-topic-me-gear-trains", "veda-topic-me-failure-theories", "veda-topic-me-fatigue-design", "veda-topic-me-casting", "veda-topic-me-machining-turning", "veda-topic-me-linear-programming", "veda-topic-me-network-analysis", "veda-topic-me-ht-conduction", "veda-topic-me-ht-heat-exchangers", "veda-topic-me-rac-vc-cycle", "veda-topic-me-statics-equilibrium"],
     "level": "national",
     "eligibility": "B.E. / B.Tech in Mechanical Engineering, age 21–30 years",
     "syllabus": ["General Studies & Engineering Aptitude", "Engineering Mechanics & Strength of Materials", "Thermodynamics & Heat Transfer", "Fluid Mechanics", "Manufacturing Engineering", "Machine Design", "Industrial & Maintenance Engineering"],
     "tags": ["ESE", "IES", "UPSC", "government", "Mechanical", "Class-1"],
     "websiteUrl": "https://upsc.gov.in",
-    "updatedAt": "2026-07-20"
+    "updatedAt": "2026-11-04"
   },
   {
     "id": "veda-exam-jam-physics",
