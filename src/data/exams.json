@@ -143,14 +143,14 @@
     "description": "Joint Entrance Examination (Main) — gateway to NITs, IIITs, and other CFTIs. Also the qualifying exam for JEE Advanced (IIT admission). Conducted by NTA twice a year. Physics, Chemistry, and Mathematics — 90 questions, 300 marks.",
     "type": "entrance",
     "conductingBody": "National Testing Agency (NTA)",
-    "subjectIds": ["veda-subject-engg-physics", "veda-subject-engg-maths"],
-    "topicIds": ["veda-topic-mechanics-kinematics", "veda-topic-differential-calculus", "veda-topic-integral-calculus"],
+    "subjectIds": ["veda-subject-hs-physics", "veda-subject-hs-chemistry", "veda-subject-hs-maths", "veda-subject-engg-physics", "veda-subject-engg-maths"],
+    "topicIds": ["veda-topic-hs-phys-kinematics", "veda-topic-hs-phys-newtons-laws", "veda-topic-hs-phys-work-energy", "veda-topic-hs-phys-rotation", "veda-topic-hs-phys-electrostatics", "veda-topic-hs-phys-current-electricity", "veda-topic-hs-phys-magnetism", "veda-topic-hs-phys-emi", "veda-topic-hs-phys-ray-optics", "veda-topic-hs-phys-wave-optics", "veda-topic-hs-phys-modern-physics", "veda-topic-hs-phys-atoms-nuclei", "veda-topic-hs-phys-semiconductors", "veda-topic-hs-chem-mole-concept", "veda-topic-hs-chem-atomic-structure", "veda-topic-hs-chem-chemical-bonding", "veda-topic-hs-chem-thermodynamics", "veda-topic-hs-chem-equilibrium", "veda-topic-hs-chem-redox", "veda-topic-hs-chem-kinetics", "veda-topic-hs-chem-solutions", "veda-topic-hs-chem-p-block", "veda-topic-hs-chem-d-f-block", "veda-topic-hs-chem-goc", "veda-topic-hs-chem-hydrocarbons", "veda-topic-hs-chem-carbonyl-compounds", "veda-topic-hs-math-sets-relations", "veda-topic-hs-math-trigonometry", "veda-topic-hs-math-complex-numbers", "veda-topic-hs-math-quadratic", "veda-topic-hs-math-sequences-series", "veda-topic-hs-math-permutation-combination", "veda-topic-hs-math-conic-sections", "veda-topic-hs-math-vectors", "veda-topic-hs-math-3d-geometry", "veda-topic-hs-math-matrices-determinants", "veda-topic-hs-math-limits-continuity", "veda-topic-hs-math-differentiation", "veda-topic-hs-math-integration", "veda-topic-hs-math-differential-equations", "veda-topic-hs-math-probability"],
     "level": "national",
     "eligibility": "Class 12 pass with PCM subjects, minimum 75% aggregate",
     "syllabus": ["Physics: Mechanics, Electromagnetism, Optics, Modern Physics", "Chemistry: Physical, Organic, Inorganic", "Mathematics: Algebra, Calculus, Coordinate Geometry, Trigonometry"],
     "tags": ["JEE", "entrance", "NIT", "IIT", "national", "Class 12"],
     "websiteUrl": "https://jeemain.nta.ac.in",
-    "updatedAt": "2026-08-15"
+    "updatedAt": "2026-11-05"
   },
   {
     "id": "veda-exam-jee-advanced",
@@ -160,14 +160,14 @@
     "description": "The gateway to IITs — India's most competitive engineering entrance examination. Only the top ~2.5 lakh JEE Main scorers are eligible. Tests deep conceptual understanding and problem-solving ability in Physics, Chemistry, and Mathematics.",
     "type": "entrance",
     "conductingBody": "IIT (on rotation)",
-    "subjectIds": ["veda-subject-engg-physics", "veda-subject-engg-maths"],
-    "topicIds": ["veda-topic-mechanics-kinematics", "veda-topic-differential-calculus", "veda-topic-integral-calculus", "veda-topic-differential-equations"],
+    "subjectIds": ["veda-subject-hs-physics", "veda-subject-hs-chemistry", "veda-subject-hs-maths", "veda-subject-engg-physics", "veda-subject-engg-maths"],
+    "topicIds": ["veda-topic-hs-phys-kinematics", "veda-topic-hs-phys-newtons-laws", "veda-topic-hs-phys-work-energy", "veda-topic-hs-phys-rotation", "veda-topic-hs-phys-electrostatics", "veda-topic-hs-phys-current-electricity", "veda-topic-hs-phys-magnetism", "veda-topic-hs-phys-emi", "veda-topic-hs-phys-ray-optics", "veda-topic-hs-phys-wave-optics", "veda-topic-hs-phys-modern-physics", "veda-topic-hs-phys-atoms-nuclei", "veda-topic-hs-phys-semiconductors", "veda-topic-hs-phys-fluid-mech", "veda-topic-hs-chem-mole-concept", "veda-topic-hs-chem-atomic-structure", "veda-topic-hs-chem-chemical-bonding", "veda-topic-hs-chem-thermodynamics", "veda-topic-hs-chem-equilibrium", "veda-topic-hs-chem-redox", "veda-topic-hs-chem-kinetics", "veda-topic-hs-chem-solutions", "veda-topic-hs-chem-solid-state", "veda-topic-hs-chem-p-block", "veda-topic-hs-chem-d-f-block", "veda-topic-hs-chem-goc", "veda-topic-hs-chem-hydrocarbons", "veda-topic-hs-chem-halogen-compounds", "veda-topic-hs-chem-carbonyl-compounds", "veda-topic-hs-chem-amines", "veda-topic-hs-math-trigonometry", "veda-topic-hs-math-inverse-trig", "veda-topic-hs-math-complex-numbers", "veda-topic-hs-math-quadratic", "veda-topic-hs-math-sequences-series", "veda-topic-hs-math-permutation-combination", "veda-topic-hs-math-straight-lines", "veda-topic-hs-math-conic-sections", "veda-topic-hs-math-vectors", "veda-topic-hs-math-3d-geometry", "veda-topic-hs-math-matrices-determinants", "veda-topic-hs-math-limits-continuity", "veda-topic-hs-math-differentiation", "veda-topic-hs-math-integration", "veda-topic-hs-math-differential-equations", "veda-topic-hs-math-probability"],
     "level": "national",
     "eligibility": "Top 2.5 lakh JEE Main qualified candidates; Class 12 pass, first or second attempt",
     "syllabus": ["Physics: Full depth, multi-concept problems", "Chemistry: Full depth, multi-concept problems", "Mathematics: Full depth, multi-concept problems"],
     "tags": ["JEE Advanced", "IIT", "entrance", "national", "elite"],
     "websiteUrl": "https://jeeadv.ac.in",
-    "updatedAt": "2026-08-15"
+    "updatedAt": "2026-11-05"
   },
   {
     "id": "veda-exam-upsc-ese-me",
@@ -313,14 +313,14 @@
     "description": "National Eligibility cum Entrance Test (Undergraduate) — the sole entrance for MBBS, BDS, BAMS, BHMS, and other medical/dental/ayush undergraduate programmes in India. Conducted by NTA. Physics, Chemistry, Biology — 180 questions, 720 marks.",
     "type": "entrance",
     "conductingBody": "National Testing Agency (NTA)",
-    "subjectIds": ["veda-subject-cbse-biology", "veda-subject-cbse-physics", "veda-subject-cbse-chemistry"],
-    "topicIds": ["veda-topic-cbse-bi-cell-biology", "veda-topic-cbse-bi-genetics", "veda-topic-cbse-bi-human-physiology"],
+    "subjectIds": ["veda-subject-hs-physics", "veda-subject-hs-chemistry", "veda-subject-hs-biology", "veda-subject-cbse-biology", "veda-subject-cbse-physics", "veda-subject-cbse-chemistry"],
+    "topicIds": ["veda-topic-hs-phys-kinematics", "veda-topic-hs-phys-newtons-laws", "veda-topic-hs-phys-work-energy", "veda-topic-hs-phys-heat-thermodynamics", "veda-topic-hs-phys-electrostatics", "veda-topic-hs-phys-current-electricity", "veda-topic-hs-phys-magnetism", "veda-topic-hs-phys-ray-optics", "veda-topic-hs-phys-modern-physics", "veda-topic-hs-phys-atoms-nuclei", "veda-topic-hs-phys-semiconductors", "veda-topic-hs-chem-mole-concept", "veda-topic-hs-chem-atomic-structure", "veda-topic-hs-chem-chemical-bonding", "veda-topic-hs-chem-periodic-table", "veda-topic-hs-chem-thermodynamics", "veda-topic-hs-chem-equilibrium", "veda-topic-hs-chem-kinetics", "veda-topic-hs-chem-solutions", "veda-topic-hs-chem-p-block", "veda-topic-hs-chem-d-f-block", "veda-topic-hs-chem-goc", "veda-topic-hs-chem-hydrocarbons", "veda-topic-hs-chem-carbonyl-compounds", "veda-topic-hs-chem-biomolecules", "veda-topic-hs-bio-cell-structure", "veda-topic-hs-bio-cell-division", "veda-topic-hs-bio-biomolecules", "veda-topic-hs-bio-photosynthesis", "veda-topic-hs-bio-respiration", "veda-topic-hs-bio-plant-growth", "veda-topic-hs-bio-human-physiology", "veda-topic-hs-bio-nervous-system", "veda-topic-hs-bio-reproduction", "veda-topic-hs-bio-human-reproduction", "veda-topic-hs-bio-genetics", "veda-topic-hs-bio-molecular-biology", "veda-topic-hs-bio-evolution", "veda-topic-hs-bio-human-health", "veda-topic-hs-bio-biotechnology", "veda-topic-hs-bio-ecology", "veda-topic-hs-bio-biodiversity", "veda-topic-hs-bio-microbes"],
     "level": "national",
     "eligibility": "Class 12 pass with PCB, minimum 50% aggregate (40% for reserved categories)",
     "syllabus": ["Physics: Class 11 & 12 NCERT syllabus", "Chemistry: Class 11 & 12 NCERT syllabus", "Biology: Class 11 & 12 NCERT Botany + Zoology"],
     "tags": ["NEET", "MBBS", "medical", "entrance", "national", "Class 12"],
     "websiteUrl": "https://neet.nta.nic.in",
-    "updatedAt": "2026-09-16"
+    "updatedAt": "2026-11-05"
   }
 ,
   {
