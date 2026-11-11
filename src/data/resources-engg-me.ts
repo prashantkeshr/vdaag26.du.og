@@ -8,6 +8,13 @@ const base = {
   academicLevel: 'undergraduate' as const,
   createdAt: '2026-11-04',
   updatedAt: '2026-11-04',
+  examIds: [] as string[],
+  courseIds: [] as string[],
+  branchIds: [] as string[],
+  semesterIds: [] as string[],
+  institutionIds: [] as string[],
+  relatedResourceIds: [] as string[],
+  prerequisiteIds: [] as string[],
 };
 
 export const resourcesEnggMeData: Resource[] = [
