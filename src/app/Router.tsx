@@ -37,6 +37,7 @@ const Achievements     = lazy(() => import('../pages/Achievements').then(m => ({
 const Settings         = lazy(() => import('../pages/Settings').then(m => ({ default: m.Settings })));
 const Flashcards       = lazy(() => import('../pages/Flashcards').then(m => ({ default: m.Flashcards })));
 const Notes            = lazy(() => import('../pages/Notes').then(m => ({ default: m.Notes })));
+const Explorer         = lazy(() => import('../pages/Explorer').then(m => ({ default: m.Explorer })));
 const FormulaSheet     = lazy(() => import('../pages/FormulaSheet').then(m => ({ default: m.FormulaSheet })));
 const ExamReadiness    = lazy(() => import('../pages/ExamReadiness').then(m => ({ default: m.ExamReadiness })));
 const TimerPage        = lazy(() => import('../pages/Timer').then(m => ({ default: m.Timer })));
@@ -107,6 +108,7 @@ export function Router() {
         <Route path="settings" element={<Suspense fallback={<PageLoader />}><Settings /></Suspense>} />
         <Route path="flashcards" element={<Suspense fallback={<PageLoader />}><Flashcards /></Suspense>} />
         <Route path="notes" element={<Suspense fallback={<PageLoader />}><Notes /></Suspense>} />
+        <Route path="explorer" element={<Suspense fallback={<PageLoader />}><Explorer /></Suspense>} />
         <Route path="formula-sheet" element={<Suspense fallback={<PageLoader />}><FormulaSheet /></Suspense>} />
         <Route path="exam-readiness" element={<Suspense fallback={<PageLoader />}><ExamReadiness /></Suspense>} />
         <Route path="timer" element={<Suspense fallback={<PageLoader />}><TimerPage /></Suspense>} />

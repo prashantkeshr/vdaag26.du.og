@@ -17,7 +17,7 @@ export function ShareButton({ title, className }: ShareButtonProps) {
         await navigator.share({ title, url });
         return;
       } catch {
-        // user cancelled or API failed — fall through to clipboard
+        // user cancelled or API failed — fall through
       }
     }
     try {
@@ -25,7 +25,12 @@ export function ShareButton({ title, className }: ShareButtonProps) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      // clipboard blocked — silent fail
+      // clipboard blocked — open WhatsApp as fallback for Indian users
+      window.open(
+        `https://wa.me/?text=${encodeURIComponent(title + ' ' + url)}`,
+        '_blank',
+        'noopener,noreferrer'
+      );
     }
   }
 

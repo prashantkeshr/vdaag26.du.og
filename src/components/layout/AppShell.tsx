@@ -43,7 +43,7 @@ export function AppShell() {
   }, [pathname]);
 
   return (
-    <div className="flex h-screen bg-stone-50 dark:bg-stone-950 overflow-hidden">
+    <div className="flex bg-stone-50 dark:bg-stone-950 overflow-hidden" style={{ height: '100dvh' }}>
       {/* Skip to main content */}
       <a
         href="#main-content"

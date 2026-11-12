@@ -11,16 +11,20 @@ interface SubjectCardProps {
 
 export function SubjectCard({ subject, className }: SubjectCardProps) {
   const levelLabel = subject.academicLevels[0]?.replace(/-/g, ' ') ?? '';
+  const accentColor = subject.color ?? '#7c3aed';
   return (
     <Link to={`/subjects/${subject.slug}`}>
-      <Card hover className={cn('p-5 flex flex-col gap-3', className)}>
+      <Card hover className={cn('p-5 flex flex-col gap-3 overflow-hidden', className)} style={{ borderTop: `3px solid ${accentColor}` }}>
         <div className="flex items-start justify-between gap-3">
           <div className="flex-1 min-w-0">
             <h3 className="font-semibold text-stone-900 dark:text-stone-100 line-clamp-2 leading-snug">{subject.title}</h3>
             <p className="text-xs text-stone-400 dark:text-stone-600 mt-0.5">{subject.shortTitle}</p>
           </div>
-          <div className="w-9 h-9 rounded-lg bg-veda-50 dark:bg-veda-900/30 flex items-center justify-center flex-shrink-0">
-            <BookOpen size={16} className="text-veda-700 dark:text-veda-400" />
+          <div
+            className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+            style={{ backgroundColor: `${accentColor}18` }}
+          >
+            <BookOpen size={16} style={{ color: accentColor }} />
           </div>
         </div>
 

@@ -242,7 +242,7 @@ export function Notes() {
 
   return (
     <div className="h-full -mt-6 -mx-4 lg:-mx-8 overflow-hidden">
-      <div className="flex h-full" style={{ height: 'calc(100vh - 64px)' }}>
+      <div className="flex h-full" style={{ height: 'calc(100svh - 64px)' }}>
 
         {/* Sidebar list — hidden on mobile when editor is open */}
         <div className={cn(
@@ -277,7 +277,7 @@ export function Notes() {
           </div>
 
           {/* List */}
-          <div className="flex-1 overflow-y-auto">
+          <div className="flex-1 overflow-y-auto pb-14 lg:pb-0">
             {filtered.length === 0 ? (
               <div className="flex flex-col items-center justify-center py-16 px-4 text-center gap-3">
                 <FileText size={28} className="text-stone-300 dark:text-stone-700" />

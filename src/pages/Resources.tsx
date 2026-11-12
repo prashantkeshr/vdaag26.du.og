@@ -6,18 +6,24 @@ import { ResourceCard } from '../components/knowledge/ResourceCard';
 import { EmptyState, SectionHeader } from '../components/ui';
 import { cn } from '../utils/cn';
 
-const TYPES = ['All', 'notes', 'pdf', 'video', 'article', 'question-paper', 'practice-set', 'mock-test'];
+const TYPES = ['All', 'notes', 'pdf', 'video', 'article', 'reference', 'course', 'question-paper', 'practice-set', 'mock-test'];
+const LANGUAGES = ['All', 'English', 'Hindi'];
 
 export function Resources() {
-  useSEO('Resources', 'Notes, PDFs, videos, question papers, and practice sets for engineering and competitive exams.');
+  useSEO('Resources', 'Notes, PDFs, videos, courses, question papers, and practice sets for engineering and competitive exams.');
   const [type, setType] = useState('All');
+  const [language, setLanguage] = useState('All');
   const [search, setSearch] = useState('');
 
-  const resources = search
-    ? resourceRepo.getAll({ search })
-    : type !== 'All'
-    ? resourceRepo.getByType(type)
-    : resourceRepo.getAll();
+  const resources = (() => {
+    let r = search
+      ? resourceRepo.getAll({ search })
+      : type !== 'All'
+      ? resourceRepo.getByType(type)
+      : resourceRepo.getAll();
+    if (language !== 'All') r = r.filter(res => res.language === language);
+    return r;
+  })();
 
   return (
     <div className="space-y-6">
@@ -44,6 +50,22 @@ export function Resources() {
               )}
             >
               {t.replace(/-/g, ' ')}
+            </button>
+          ))}
+        </div>
+        <div className="flex gap-1.5">
+          {LANGUAGES.map(l => (
+            <button
+              key={l}
+              onClick={() => setLanguage(l)}
+              className={cn(
+                'px-3 py-1 rounded text-xs font-medium transition-colors',
+                language === l
+                  ? 'bg-stone-800 text-white dark:bg-stone-200 dark:text-stone-800'
+                  : 'bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'
+              )}
+            >
+              {l}
             </button>
           ))}
         </div>

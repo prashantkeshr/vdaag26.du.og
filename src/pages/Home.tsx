@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useSEO } from '../hooks/useSEO';
-import { BookOpen, Hash, GraduationCap, FileText, ClipboardList, Route, ArrowRight, Zap, Sparkles, Map, RotateCcw, Bookmark, Building2, University, Layers } from 'lucide-react';
+import { BookOpen, Hash, GraduationCap, FileText, ClipboardList, Route, ArrowRight, Zap, Sparkles, Map, RotateCcw, Bookmark, Building2, University, Layers, Trophy } from 'lucide-react';
 import { subjectRepo, topicRepo, examRepo, boardRepo, institutionRepo, streamRepo, programmeRepo } from '../repositories';
 import { SubjectCard } from '../components/knowledge/SubjectCard';
 import { TopicCard } from '../components/knowledge/TopicCard';
@@ -77,8 +77,8 @@ export function Home() {
         </div>
         <h1 className="text-2xl lg:text-3xl font-bold mb-2 text-white">Welcome to VEDA</h1>
         <p className="text-veda-200 text-sm lg:text-base max-w-xl leading-relaxed">
-          India's universal educational knowledge layer — every board, institution, stream, and programme.
-          From a Class 3 student to a rocket IIT student, everyone comes to VEDA.
+          India's educational knowledge layer — Class 11-12 (JEE, NEET), Engineering (GATE), and beyond.
+          Every board, institution, stream, and subject in one place.
         </p>
         <div className="flex flex-wrap gap-5 mt-5 text-sm">
           <span className="text-veda-200"><strong className="text-white">{totalBoards}</strong> Boards</span>
@@ -90,6 +90,32 @@ export function Home() {
           {completedCount > 0 && (
             <span className="text-veda-200"><strong className="text-white">{completedCount}</strong> Completed</span>
           )}
+        </div>
+      </div>
+
+      {/* Exam quick-access pills */}
+      <div>
+        <div className="flex items-center gap-2 mb-3">
+          <Trophy size={15} className="text-amber-500" />
+          <span className="text-sm font-semibold text-stone-700 dark:text-stone-300">Quick Exam Access</span>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {[
+            { label: 'JEE Main', slug: 'jee-main', color: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800' },
+            { label: 'JEE Advanced', slug: 'jee-advanced', color: 'bg-indigo-50 text-indigo-700 border-indigo-200 dark:bg-indigo-900/20 dark:text-indigo-400 dark:border-indigo-800' },
+            { label: 'NEET', slug: 'neet', color: 'bg-green-50 text-green-700 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800' },
+            { label: 'GATE ME', slug: 'gate-me', color: 'bg-orange-50 text-orange-700 border-orange-200 dark:bg-orange-900/20 dark:text-orange-400 dark:border-orange-800' },
+            { label: 'GATE CS', slug: 'gate-cs', color: 'bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-900/20 dark:text-purple-400 dark:border-purple-800' },
+            { label: 'CBSE Board', slug: 'cbse-board', color: 'bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800' },
+          ].map(({ label, slug, color }) => (
+            <Link
+              key={slug}
+              to={`/exams/${slug}`}
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors hover:opacity-80 ${color}`}
+            >
+              {label}
+            </Link>
+          ))}
         </div>
       </div>
 

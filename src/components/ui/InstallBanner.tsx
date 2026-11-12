@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Download, X } from 'lucide-react';
 import { usePWAInstall } from '../../hooks/usePWAInstall';
 import { cn } from '../../utils/cn';
@@ -9,13 +10,21 @@ export function InstallBanner() {
     try { return localStorage.getItem('veda-install-banner-dismissed') === '1'; }
     catch { return false; }
   });
+  const [shouldShow, setShouldShow] = useState(false);
+  const navCount = useRef(0);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    navCount.current += 1;
+    if (navCount.current >= 2) setShouldShow(true);
+  }, [pathname]);
 
   function dismiss() {
     setDismissed(true);
     try { localStorage.setItem('veda-install-banner-dismissed', '1'); } catch {}
   }
 
-  if (!canInstall || dismissed) return null;
+  if (!canInstall || dismissed || !shouldShow) return null;
 
   return (
     <div className={cn(

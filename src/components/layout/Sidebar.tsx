@@ -3,7 +3,7 @@ import {
   Home, Search, BookOpen, Hash, GraduationCap,
   FileText, ClipboardList, Route, User, LayoutGrid,
   Map, X, Code2, ClipboardCheck, BarChart2, Trophy, Settings2, Layers, StickyNote, Calculator, Target, Timer, CalendarDays, Bookmark, Scale, Zap, Info, Mail,
-  Building2, University, Layers as LayersIcon,
+  Building2, University, Layers as LayersIcon, FolderOpen,
 } from 'lucide-react';
 import { cn } from '../../utils/cn';
 
@@ -27,6 +27,7 @@ const navItems = [
   { to: '/planner', icon: CalendarDays, label: 'Weekly Planner' },
   { to: '/timer', icon: Timer, label: 'Study Timer' },
   { to: '/notes', icon: StickyNote, label: 'Study Notes' },
+  { to: '/explorer', icon: FolderOpen, label: 'Knowledge Explorer' },
   { to: '/quiz', icon: ClipboardCheck, label: 'Practice Quiz' },
   { to: '/flashcards', icon: Layers, label: 'Flashcards' },
   { to: '/formula-sheet', icon: Calculator, label: 'Formula Sheet' },

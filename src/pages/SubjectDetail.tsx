@@ -1,9 +1,10 @@
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { useSEO } from '../hooks/useSEO';
 import { useStructuredData, LD_BASE, LD_PROVIDER } from '../hooks/useStructuredData';
 import { ShareButton } from '../components/ui/ShareButton';
-import { BookOpen, Hash, FileText, ClipboardList } from 'lucide-react';
+import { BookOpen, Hash, FileText, ClipboardList, FolderOpen } from 'lucide-react';
 import { subjectRepo, topicRepo, resourceRepo, examRepo } from '../repositories';
+import { GuideSection } from '../components/knowledge/GuideSection';
 import { TopicCard } from '../components/knowledge/TopicCard';
 import { ResourceCard } from '../components/knowledge/ResourceCard';
 import { Breadcrumb } from '../components/layout/Breadcrumb';
@@ -37,13 +38,24 @@ export function SubjectDetail() {
 
       {/* Header */}
       <div className="flex items-start gap-4">
-        <div className="w-12 h-12 rounded-xl bg-veda-50 dark:bg-veda-900/30 flex items-center justify-center flex-shrink-0">
-          <BookOpen size={22} className="text-veda-700 dark:text-veda-400" />
+        <div
+          className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+          style={{ backgroundColor: subject.color ? `${subject.color}18` : undefined }}
+        >
+          <BookOpen size={22} style={{ color: subject.color ?? '#7c3aed' }} />
         </div>
         <div className="flex-1">
-          <div className="flex items-start justify-between gap-2">
+          <div className="flex items-start justify-between gap-2 flex-wrap">
             <h1 className="text-2xl font-bold text-stone-900 dark:text-stone-100">{subject.title}</h1>
-            <ShareButton title={subject.title} className="flex-shrink-0 mt-1" />
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <Link
+                to={`/explorer?subject=${subject.slug}`}
+                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium border border-stone-200 dark:border-stone-700 text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              >
+                <FolderOpen size={13} /> Study in Explorer
+              </Link>
+              <ShareButton title={subject.title} />
+            </div>
           </div>
           <p className="text-stone-500 dark:text-stone-400 mt-1 text-sm leading-relaxed max-w-2xl">
             {subject.description}
@@ -74,6 +86,16 @@ export function SubjectDetail() {
           </div>
         ))}
       </div>
+
+      {/* Study Guide */}
+      {subject.guide && (
+        <div className="bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800 p-6">
+          <h2 className="text-base font-bold text-stone-900 dark:text-stone-100 mb-4 flex items-center gap-2">
+            <BookOpen size={15} className="text-veda-700 dark:text-veda-400" /> Study Guide
+          </h2>
+          <GuideSection guide={subject.guide} />
+        </div>
+      )}
 
       {/* Topics */}
       <div>

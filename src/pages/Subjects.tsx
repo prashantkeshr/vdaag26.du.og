@@ -6,10 +6,17 @@ import { SubjectCard } from '../components/knowledge/SubjectCard';
 import { EmptyState, SectionHeader } from '../components/ui';
 import { cn } from '../utils/cn';
 
-const LEVELS = ['All', 'undergraduate', 'competitive-exam', 'postgraduate'];
+const LEVELS: Array<{ key: string; label: string }> = [
+  { key: 'All', label: 'All' },
+  { key: 'higher-secondary', label: 'Class 11–12' },
+  { key: 'secondary', label: 'Class 9–10' },
+  { key: 'undergraduate', label: 'Undergraduate' },
+  { key: 'competitive-exam', label: 'Competitive' },
+  { key: 'postgraduate', label: 'Postgraduate' },
+];
 
 export function Subjects() {
-  useSEO('Subjects', 'Browse all engineering and science subjects — Mathematics, Thermodynamics, Fluid Mechanics, and more.');
+  useSEO('Subjects', 'Browse all subjects — Class 9-12, Engineering, B.Sc, JEE, NEET, GATE and more.');
   const [level, setLevel] = useState('All');
   const [search, setSearch] = useState('');
 
@@ -36,18 +43,18 @@ export function Subjects() {
           className="flex-1 px-3 py-2 text-sm rounded-md bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-stone-100 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-veda-700/30"
         />
         <div className="flex gap-1 flex-wrap">
-          {LEVELS.map(l => (
+          {LEVELS.map(({ key, label }) => (
             <button
-              key={l}
-              onClick={() => setLevel(l)}
+              key={key}
+              onClick={() => setLevel(key)}
               className={cn(
-                'px-3 py-1.5 rounded-md text-xs font-medium transition-colors capitalize',
-                level === l
+                'px-3 py-1.5 rounded-md text-xs font-medium transition-colors',
+                level === key
                   ? 'bg-veda-700 text-white dark:bg-veda-500'
                   : 'bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800'
               )}
             >
-              {l.replace(/-/g, ' ')}
+              {label}
             </button>
           ))}
         </div>
