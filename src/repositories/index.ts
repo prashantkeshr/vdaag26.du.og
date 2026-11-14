@@ -74,6 +74,18 @@ import { resourcesHsBiologyData } from '../data/resources-hs-biology';
 import { cbse9SubjectsData } from '../data/cbse-9-subjects';
 import { cbse9TopicsData } from '../data/cbse-9-topics';
 import { resourcesCbse9Data } from '../data/resources-cbse-9';
+import { hsCommerceSubjectsData } from '../data/hs-commerce-subjects';
+import { hsArtsSubjectsData } from '../data/hs-arts-subjects';
+import { hsAccountancyTopicsData } from '../data/hs-commerce-topics-accountancy';
+import { hsBusinessStudiesTopicsData } from '../data/hs-commerce-topics-business';
+import { hsEconomicsTopicsData } from '../data/hs-commerce-topics-economics';
+import { hsHistoryTopicsData } from '../data/hs-arts-topics-history';
+import { hsPoliticalScienceTopicsData } from '../data/hs-arts-topics-polsci';
+import { hsGeographyTopicsData } from '../data/hs-arts-topics-geography';
+import { hsSociologyTopicsData } from '../data/hs-arts-topics-sociology';
+import { hsPsychologyTopicsData } from '../data/hs-arts-topics-psychology';
+import { resourcesHsCommerceData } from '../data/resources-hs-commerce';
+import { resourcesHsArtsData } from '../data/resources-hs-arts';
 
 // ── Generic local repository ───────────────────────────────────────────
 
@@ -284,6 +296,8 @@ export const subjectRepo = new SubjectRepository([
   ...meSubjectsData,
   ...hsScienceSubjectsData,
   ...cbse9SubjectsData,
+  ...hsCommerceSubjectsData,
+  ...hsArtsSubjectsData,
 ]);
 export const topicRepo = new TopicRepository([
   ...(topicsData as Topic[]),
@@ -307,6 +321,14 @@ export const topicRepo = new TopicRepository([
   ...hsMathsTopicsData,
   ...hsBiologyTopicsData,
   ...cbse9TopicsData,
+  ...hsAccountancyTopicsData,
+  ...hsBusinessStudiesTopicsData,
+  ...hsEconomicsTopicsData,
+  ...hsHistoryTopicsData,
+  ...hsPoliticalScienceTopicsData,
+  ...hsGeographyTopicsData,
+  ...hsSociologyTopicsData,
+  ...hsPsychologyTopicsData,
 ]);
 export const resourceRepo = new ResourceRepository([
   ...(resourcesData as Resource[]),
@@ -334,6 +356,8 @@ export const resourceRepo = new ResourceRepository([
   ...resourcesHsMathsData,
   ...resourcesHsBiologyData,
   ...resourcesCbse9Data,
+  ...resourcesHsCommerceData,
+  ...resourcesHsArtsData,
 ]);
 export const courseRepo = new CourseRepository(coursesData as Course[]);
 export const examRepo = new ExamRepository(examsData as Exam[]);
