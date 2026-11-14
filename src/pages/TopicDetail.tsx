@@ -3,7 +3,8 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { useSEO } from '../hooks/useSEO';
 import { useStructuredData, LD_BASE, LD_PROVIDER } from '../hooks/useStructuredData';
 import { ShareButton } from '../components/ui/ShareButton';
-import { Clock, Zap, BookOpen, ChevronRight, ArrowRight, Circle, CheckCircle, Globe } from 'lucide-react';
+import { Clock, Zap, BookOpen, ChevronRight, ArrowRight, Circle, CheckCircle, Globe, ExternalLink } from 'lucide-react';
+import { GuideSection } from '../components/knowledge/GuideSection';
 import { topicRepo, subjectRepo, resourceRepo, questionRepo } from '../repositories';
 import { ResourceCard } from '../components/knowledge/ResourceCard';
 import { TopicCard } from '../components/knowledge/TopicCard';
@@ -149,6 +150,41 @@ export function TopicDetail() {
             </h2>
             <p className="text-stone-600 dark:text-stone-400 text-sm leading-relaxed">{topic.overview}</p>
           </div>
+
+          {/* Topic image */}
+          {topic.imageUrl && (
+            <div className="bg-white dark:bg-stone-900 rounded-lg border border-stone-200 dark:border-stone-800 overflow-hidden">
+              <img
+                src={topic.imageUrl}
+                alt={topic.title}
+                className="w-full max-h-56 object-contain bg-stone-50 dark:bg-stone-800 p-3"
+                loading="lazy"
+              />
+            </div>
+          )}
+
+          {/* Study guide */}
+          {topic.guide && (
+            <div className="bg-white dark:bg-stone-900 rounded-lg border border-stone-200 dark:border-stone-800 p-5">
+              <GuideSection guide={topic.guide} />
+            </div>
+          )}
+
+          {/* LibreTexts beyond syllabus */}
+          {topic.libreTextsUrl && (
+            <a
+              href={topic.libreTextsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-3 bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4 hover:bg-teal-100 dark:hover:bg-teal-900/30 transition-colors group"
+            >
+              <div>
+                <p className="text-sm font-medium text-teal-900 dark:text-teal-200">Deep Dive on LibreTexts</p>
+                <p className="text-xs text-teal-700 dark:text-teal-400 mt-0.5">Go beyond the syllabus — free open textbook content on this topic</p>
+              </div>
+              <ExternalLink size={16} className="text-teal-600 dark:text-teal-400 flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+          )}
 
           {/* Key concepts */}
           {topic.keyConcepts?.length > 0 && (

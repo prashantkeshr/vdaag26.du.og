@@ -28,6 +28,7 @@ const navItems = [
   { to: '/timer', icon: Timer, label: 'Study Timer' },
   { to: '/notes', icon: StickyNote, label: 'Study Notes' },
   { to: '/explorer', icon: FolderOpen, label: 'Knowledge Explorer' },
+  { to: '/class', icon: GraduationCap, label: 'Class Study Hubs' },
   { to: '/quiz', icon: ClipboardCheck, label: 'Practice Quiz' },
   { to: '/flashcards', icon: Layers, label: 'Flashcards' },
   { to: '/formula-sheet', icon: Calculator, label: 'Formula Sheet' },

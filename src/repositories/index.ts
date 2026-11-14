@@ -71,6 +71,9 @@ import { resourcesHsPhysicsData } from '../data/resources-hs-physics';
 import { resourcesHsChemistryData } from '../data/resources-hs-chemistry';
 import { resourcesHsMathsData } from '../data/resources-hs-maths';
 import { resourcesHsBiologyData } from '../data/resources-hs-biology';
+import { cbse9SubjectsData } from '../data/cbse-9-subjects';
+import { cbse9TopicsData } from '../data/cbse-9-topics';
+import { resourcesCbse9Data } from '../data/resources-cbse-9';
 
 // ── Generic local repository ───────────────────────────────────────────
 
@@ -280,6 +283,7 @@ export const subjectRepo = new SubjectRepository([
   ...cbse9to10SubjectsData,
   ...meSubjectsData,
   ...hsScienceSubjectsData,
+  ...cbse9SubjectsData,
 ]);
 export const topicRepo = new TopicRepository([
   ...(topicsData as Topic[]),
@@ -302,6 +306,7 @@ export const topicRepo = new TopicRepository([
   ...hsChemistryTopicsData,
   ...hsMathsTopicsData,
   ...hsBiologyTopicsData,
+  ...cbse9TopicsData,
 ]);
 export const resourceRepo = new ResourceRepository([
   ...(resourcesData as Resource[]),
@@ -328,6 +333,7 @@ export const resourceRepo = new ResourceRepository([
   ...resourcesHsChemistryData,
   ...resourcesHsMathsData,
   ...resourcesHsBiologyData,
+  ...resourcesCbse9Data,
 ]);
 export const courseRepo = new CourseRepository(coursesData as Course[]);
 export const examRepo = new ExamRepository(examsData as Exam[]);

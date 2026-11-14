@@ -57,6 +57,8 @@ const NotFound         = lazy(() => import('../pages/NotFound').then(m => ({ def
 const Legal            = lazy(() => import('../pages/Legal').then(m => ({ default: m.Legal })));
 const About            = lazy(() => import('../pages/About').then(m => ({ default: m.About })));
 const Contact          = lazy(() => import('../pages/Contact').then(m => ({ default: m.Contact })));
+const ClassHubHome     = lazy(() => import('../pages/ClassHubHome').then(m => ({ default: m.ClassHubHome })));
+const ClassHub         = lazy(() => import('../pages/ClassHub').then(m => ({ default: m.ClassHub })));
 
 function PageLoader() {
   return (
@@ -85,6 +87,8 @@ export function Router() {
       {/* ── Student routes with AppShell layout ────────────────────── */}
       <Route element={<AppShell />}>
         <Route index element={<Suspense fallback={<PageLoader />}><Home /></Suspense>} />
+        <Route path="class" element={<Suspense fallback={<PageLoader />}><ClassHubHome /></Suspense>} />
+        <Route path="class/:level" element={<Suspense fallback={<PageLoader />}><ClassHub /></Suspense>} />
         <Route path="subjects" element={<Suspense fallback={<PageLoader />}><Subjects /></Suspense>} />
         <Route path="subjects/:slug" element={<Suspense fallback={<PageLoader />}><SubjectDetail /></Suspense>} />
         <Route path="topics" element={<Suspense fallback={<PageLoader />}><Topics /></Suspense>} />

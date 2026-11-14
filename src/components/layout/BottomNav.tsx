@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
-import { Home, Search, BookOpen, FolderOpen, User } from 'lucide-react';
+import { Home, Search, BookOpen, GraduationCap, User } from 'lucide-react';
 import { cn } from '../../utils/cn';
 
 const items = [
   { to: '/', icon: Home, label: 'Home', end: true },
   { to: '/search', icon: Search, label: 'Search' },
   { to: '/subjects', icon: BookOpen, label: 'Subjects' },
-  { to: '/explorer', icon: FolderOpen, label: 'Explorer' },
+  { to: '/class', icon: GraduationCap, label: 'Class Hub' },
   { to: '/my-learning', icon: User, label: 'My Learning' },
 ];
 

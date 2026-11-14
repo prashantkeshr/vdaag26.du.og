@@ -1,9 +1,9 @@
-﻿{
+{
   "$schema": "/vdaag26.du.og/api/v1/schema.json",
   "version": "1.0.0",
   "entity": "learning-path",
   "count": 3,
-  "generatedAt": "2026-09-22T19:15:20.714Z",
+  "generatedAt": "2026-11-14T04:07:59.186Z",
   "data": [
     {
       "id": "veda-lp-gate-me-complete",
@@ -185,6 +185,391 @@
           "refId": "veda-topic-bending-shear",
           "label": "Bending Moment & Shear Force",
           "estimatedMinutes": 210
+        },
+        {
+          "order": 26,
+          "type": "milestone",
+          "refId": "phase-5-tom",
+          "label": "Phase 5: Theory of Machines & Vibrations",
+          "estimatedMinutes": 1200
+        },
+        {
+          "order": 27,
+          "type": "topic",
+          "refId": "veda-topic-me-mechanisms-links",
+          "label": "Mechanisms, Linkages & DOF",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 28,
+          "type": "topic",
+          "refId": "veda-topic-me-kinematics-vel-accel",
+          "label": "Velocity & Acceleration Analysis",
+          "estimatedMinutes": 180
+        },
+        {
+          "order": 29,
+          "type": "topic",
+          "refId": "veda-topic-me-gear-trains",
+          "label": "Gear Trains & Epicyclic Analysis",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 30,
+          "type": "topic",
+          "refId": "veda-topic-me-cams-followers",
+          "label": "Cams & Followers",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 31,
+          "type": "topic",
+          "refId": "veda-topic-me-flywheels-governors",
+          "label": "Flywheels & Governors",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 32,
+          "type": "topic",
+          "refId": "veda-topic-me-dynamic-balancing",
+          "label": "Dynamic Balancing",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 33,
+          "type": "topic",
+          "refId": "veda-topic-me-free-vibrations",
+          "label": "Free Vibrations — SDOF Systems",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 34,
+          "type": "topic",
+          "refId": "veda-topic-me-forced-vibrations",
+          "label": "Forced Vibrations & Transmissibility",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 35,
+          "type": "resource",
+          "refId": "veda-resource-me-nptel-tom-kin-iitk",
+          "label": "NPTEL: Kinematics of Machines – IIT Kanpur",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 36,
+          "type": "milestone",
+          "refId": "phase-6-md",
+          "label": "Phase 6: Machine Design",
+          "estimatedMinutes": 900
+        },
+        {
+          "order": 37,
+          "type": "topic",
+          "refId": "veda-topic-me-failure-theories",
+          "label": "Failure Theories & Factor of Safety",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 38,
+          "type": "topic",
+          "refId": "veda-topic-me-fatigue-design",
+          "label": "Fatigue & Endurance Limit (Goodman)",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 39,
+          "type": "topic",
+          "refId": "veda-topic-me-shafts-keys",
+          "label": "Shafts, Keys & Couplings",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 40,
+          "type": "topic",
+          "refId": "veda-topic-me-bearings",
+          "label": "Bearings — Journal & Rolling",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 41,
+          "type": "topic",
+          "refId": "veda-topic-me-gear-design",
+          "label": "Gear Design — Lewis Equation",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 42,
+          "type": "topic",
+          "refId": "veda-topic-me-bolted-welded",
+          "label": "Bolted & Welded Joints",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 43,
+          "type": "topic",
+          "refId": "veda-topic-me-springs-vessels",
+          "label": "Springs & Pressure Vessels",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 44,
+          "type": "resource",
+          "refId": "veda-resource-me-nptel-md-design-elem-iitkgp",
+          "label": "NPTEL: Design of Machine Elements I – IIT KGP",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 45,
+          "type": "milestone",
+          "refId": "phase-7-mfg",
+          "label": "Phase 7: Manufacturing Engineering",
+          "estimatedMinutes": 810
+        },
+        {
+          "order": 46,
+          "type": "topic",
+          "refId": "veda-topic-me-casting",
+          "label": "Casting Processes & Riser Design",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 47,
+          "type": "topic",
+          "refId": "veda-topic-me-metal-forming",
+          "label": "Metal Forming (Rolling, Forging, Drawing)",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 48,
+          "type": "topic",
+          "refId": "veda-topic-me-welding",
+          "label": "Welding Processes",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 49,
+          "type": "topic",
+          "refId": "veda-topic-me-machining-turning",
+          "label": "Machining: Turning & Drilling (Merchant Circle)",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 50,
+          "type": "topic",
+          "refId": "veda-topic-me-machining-milling",
+          "label": "Machining: Milling & Grinding",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 51,
+          "type": "topic",
+          "refId": "veda-topic-me-metrology-qc",
+          "label": "Metrology & Quality Control (Cp, Cpk)",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 52,
+          "type": "resource",
+          "refId": "veda-resource-me-nptel-mfg-machining-iitk",
+          "label": "NPTEL: Machining Science – IIT Kanpur",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 53,
+          "type": "milestone",
+          "refId": "phase-8-ie",
+          "label": "Phase 8: Industrial Engineering & OR",
+          "estimatedMinutes": 810
+        },
+        {
+          "order": 54,
+          "type": "topic",
+          "refId": "veda-topic-me-linear-programming",
+          "label": "Linear Programming & Transportation",
+          "estimatedMinutes": 180
+        },
+        {
+          "order": 55,
+          "type": "topic",
+          "refId": "veda-topic-me-network-analysis",
+          "label": "CPM / PERT & Project Scheduling",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 56,
+          "type": "topic",
+          "refId": "veda-topic-me-inventory-models",
+          "label": "Inventory Models — EOQ & EPQ",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 57,
+          "type": "topic",
+          "refId": "veda-topic-me-forecasting",
+          "label": "Forecasting — Exponential Smoothing & MAD",
+          "estimatedMinutes": 90
+        },
+        {
+          "order": 58,
+          "type": "topic",
+          "refId": "veda-topic-me-queuing-theory",
+          "label": "Queuing Theory — M/M/1",
+          "estimatedMinutes": 90
+        },
+        {
+          "order": 59,
+          "type": "topic",
+          "refId": "veda-topic-me-work-study",
+          "label": "Work Study & Standard Time",
+          "estimatedMinutes": 90
+        },
+        {
+          "order": 60,
+          "type": "topic",
+          "refId": "veda-topic-me-scheduling",
+          "label": "Scheduling — Johnson's Algorithm & Line Balancing",
+          "estimatedMinutes": 90
+        },
+        {
+          "order": 61,
+          "type": "resource",
+          "refId": "veda-resource-me-nptel-ie-ior-iitg",
+          "label": "NPTEL: IE & OR – IIT Guwahati",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 62,
+          "type": "milestone",
+          "refId": "phase-9-ht",
+          "label": "Phase 9: Heat Transfer",
+          "estimatedMinutes": 570
+        },
+        {
+          "order": 63,
+          "type": "topic",
+          "refId": "veda-topic-me-ht-conduction",
+          "label": "Conduction & Fins",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 64,
+          "type": "topic",
+          "refId": "veda-topic-me-ht-convection",
+          "label": "Convection & Nu Correlations",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 65,
+          "type": "topic",
+          "refId": "veda-topic-me-ht-radiation",
+          "label": "Radiation & View Factors",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 66,
+          "type": "topic",
+          "refId": "veda-topic-me-ht-heat-exchangers",
+          "label": "Heat Exchangers — LMTD & ε-NTU",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 67,
+          "type": "resource",
+          "refId": "veda-resource-me-nptel-ht-noc-iitb",
+          "label": "NPTEL NOC: Heat Transfer – IIT Bombay",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 68,
+          "type": "milestone",
+          "refId": "phase-10-rac",
+          "label": "Phase 10: Refrigeration & Air Conditioning",
+          "estimatedMinutes": 390
+        },
+        {
+          "order": 69,
+          "type": "topic",
+          "refId": "veda-topic-me-rac-vc-cycle",
+          "label": "Vapour Compression Refrigeration Cycle",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 70,
+          "type": "topic",
+          "refId": "veda-topic-me-rac-absorption",
+          "label": "Absorption Refrigeration System",
+          "estimatedMinutes": 90
+        },
+        {
+          "order": 71,
+          "type": "topic",
+          "refId": "veda-topic-me-rac-refrigerants",
+          "label": "Refrigerants & Environmental Impact",
+          "estimatedMinutes": 60
+        },
+        {
+          "order": 72,
+          "type": "topic",
+          "refId": "veda-topic-me-psychrometry",
+          "label": "Psychrometry & Air Conditioning",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 73,
+          "type": "resource",
+          "refId": "veda-resource-me-nptel-rac-iitkgp",
+          "label": "NPTEL: RAC – IIT Kharagpur",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 74,
+          "type": "milestone",
+          "refId": "phase-11-em",
+          "label": "Phase 11: Engineering Mechanics",
+          "estimatedMinutes": 630
+        },
+        {
+          "order": 75,
+          "type": "topic",
+          "refId": "veda-topic-me-statics-equilibrium",
+          "label": "Statics & Equilibrium (FBDs)",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 76,
+          "type": "topic",
+          "refId": "veda-topic-me-centroids-moi",
+          "label": "Centroids & Moment of Inertia",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 77,
+          "type": "topic",
+          "refId": "veda-topic-me-friction",
+          "label": "Friction — Belt, Screw Jack, Wedge",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 78,
+          "type": "topic",
+          "refId": "veda-topic-me-kinematics-particles",
+          "label": "Kinematics of Particles & Rigid Bodies",
+          "estimatedMinutes": 120
+        },
+        {
+          "order": 79,
+          "type": "topic",
+          "refId": "veda-topic-me-kinetics-rigid-body",
+          "label": "Kinetics of Rigid Bodies",
+          "estimatedMinutes": 150
+        },
+        {
+          "order": 80,
+          "type": "milestone",
+          "refId": "gate-me-complete",
+          "label": "Complete GATE ME Preparation — All 11 Subjects Done",
+          "estimatedMinutes": 0
         }
       ],
       "goalExamIds": [
@@ -193,7 +578,7 @@
       "goalCourseIds": [
         "veda-course-gate-me-prep"
       ],
-      "totalMinutes": 9600,
+      "totalMinutes": 14820,
       "difficulty": "advanced",
       "academicLevel": "competitive-exam",
       "tags": [

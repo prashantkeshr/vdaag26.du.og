@@ -90,6 +90,9 @@ export interface Topic {
   academicLevel: AcademicLevel;
   examRelevance: string[];
   tags: string[];
+  classYear?: 9 | 10 | 11 | 12;
+  imageUrl?: string;
+  libreTextsUrl?: string;
   updatedAt: string;
 }
 
